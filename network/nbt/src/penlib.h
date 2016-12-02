@@ -1,25 +1,12 @@
-/*
- * $Id: //devel/tools/main/nbtscan/penlib.h#1 $
- *
- *	Common library definitions for our penetration tools.
- */
-
 #ifndef _WIN32
 #include <wchar.h>
 #else
 #include <windows.h>
 #endif
 
-/*lint -emacro(717, FD_SET) // do...while() */
-
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/*lint -emacro(605, assert)	// increase in ptr capabilityh		*/
-/*lint -emacro(717, FD_SET)	// use of do {...} while		*/
-/*lint -esym(534, WSACleanup)	// return value ignored			*/
-/*lint -esym(534, stripA, stripW, vfprintf)	// ... ditto			*/
 
 /*------------------------------------------------------------------------
  * The old DEC Alpha compiler takes prototypes but is not really ANSI C:
@@ -524,6 +511,5 @@ extern void __cdecl tprintfW(const char *format, ...);
 #  define tprintf               tprintfA
 #  define strdup_new            strdup_newA
 #endif
-
 
 #endif /* __cplusplus */

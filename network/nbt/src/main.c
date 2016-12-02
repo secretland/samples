@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-#include "nbtscan_common.h"
+#include <assert.h>
+#if defined(_WIN32)
+    #include <winsock2.h>
+#endif /* defined(_WIN32) */
 #include "nbtdefs.h"
 
 #if !defined(FALSE)
