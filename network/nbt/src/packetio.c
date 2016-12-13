@@ -14,9 +14,8 @@ int recvpacket_direct(SOCKET ifd, void *pak, int maxlen, struct sockaddr_in *src
 #ifdef _SCO_DS
     int    srclen = sizeof *src;
 #else
-    size_t    srclen = sizeof *src;
+    size_t srclen = sizeof *src;
 #endif
-
     assert(pak != 0);
     assert(src != 0);
 

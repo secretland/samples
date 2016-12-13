@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 2.8)
 set(MODULE_NAME nbt)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SOURCES_MAIN)
 
-list(REMOVE_ITEM SOURCES_MAIN ${PROJECT_SOURCE_DIR}/src/printable_NETBIOS_question_class.c
-                              ${PROJECT_SOURCE_DIR}/src/printable_NETBIOS_question_type.c)
+list(REMOVE_ITEM SOURCES_MAIN #${PROJECT_SOURCE_DIR}/src/nbt.c
+                              ${PROJECT_SOURCE_DIR}/src/main_org.c)
 
 add_definitions(-D _WINSOCK_DEPRECATED_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS)
 
