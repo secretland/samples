@@ -2,7 +2,7 @@ project(ldap)
 
 cmake_minimum_required(VERSION 2.8)
 
-set(MODULE_NAME ldap)
+set(MODULE_NAME ldapConnect)
 set(SOURCES_MAIN ${PROJECT_SOURCE_DIR}/src/ldapConnection.cpp
                  ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
