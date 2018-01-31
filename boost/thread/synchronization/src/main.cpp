@@ -13,7 +13,7 @@ void foo()
     std::cout << __FUNCTION__ << ". thread sleep..." << std::endl;
     boost::this_thread::sleep_for(boost::chrono::seconds(5));
     std::cout << __FUNCTION__ << ". thread wake up" << std::endl;
-    cv.notify_one();
+    cv.notify_all();
 }
 
 void bar()

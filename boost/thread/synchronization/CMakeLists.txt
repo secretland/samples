@@ -4,10 +4,6 @@ cmake_minimum_required(VERSION 2.8)
 
 set(MODULE_NAME test_synchro)
 
-find_package(Boost COMPONENTS system REQUIRED)
-
-message(STATUS "Boost libs: ${Boost_LIBRARIES}")
-
 #add_definitions(-DNO_BOOST_LOG)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SOURCES_MAIN)
