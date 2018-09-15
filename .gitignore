@@ -12,3 +12,7 @@
 /network/nbt/cmake_install.cmake
 /network/nbt/CMakeCache.txt
 CMakeCache.txt
+build
+CMakeFiles
+Makefile
+cmake_install.cmake
