@@ -3,7 +3,7 @@
 
 #include <string>
 
-#if defined(WIN32)
+#if defined(_WIN32)
     #include <Windows.h>
     #include <Winldap.h>
 #elif defined(__linux__)
